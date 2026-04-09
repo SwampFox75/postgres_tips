@@ -5,4 +5,4 @@
 1. Use the /dt command to display tables
      This database has one table called "ev"
 
-![Alt text](basics/psql_0basics_displayTables.png?raw=true "Optional Title")
+![alt text](basics/psql_0basics_displayTables.png "display tables")
