@@ -22,4 +22,4 @@
       - INT is "Integer" and can only use whole numbers
 - close off the command with parenthesis and a semi-colon ");"
 
-![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/basics/psql_0basics_dropTables.png?raw=true "drop tables")
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/basics/psql_0basics_createTables.png?raw=true "drop tables")
