@@ -4,7 +4,7 @@
 - use the \dt command to display tables
    - this database has one table called "ev"
 
-![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/basics/psql_0basics_displayTables.png?raw=true "display tables")
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/1_basics/screencaps/psql_0basics_displayTables.png?raw=true "display tables")
 
 ## How to remove tables from the database
 - use the DROP TABLE command ending with a semi-colon
@@ -12,7 +12,7 @@
       - Ex: DROP TABLE table1, table2, table3;
 - use the \dt command again to verify tables 
 
-![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/basics/psql_0basics_dropTables.png?raw=true "drop tables")
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/1_basics/screencaps/psql_0basics_dropTables.png?raw=true "drop tables")
 
 ## How to create tables in the database
 - use the CREATE TABLE command which will extend the console command until it is closed
@@ -23,7 +23,7 @@
 - close off the command with parenthesis and a semi-colon ");"
 - use the \dt command again to verify tables
 
-![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/basics/psql_0basics_createTables.png?raw=true "create tables")
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/1_basics/screencaps/psql_0basics_createTables.png?raw=true "create tables")
 
 ## How to insert data into a table
 - use the INSERT INTO command which will extend the console command until it is closed
@@ -35,7 +35,7 @@
 - the console should return "INSERT" with the row count, in this case 3
    - the first digit is the OID but that can be ignored for now
 
-![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/basics/psql_0basics_insertRows.png?raw=true "insert rows")
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/1_basics/screencaps/psql_0basics_insertRows.png?raw=true "insert rows")
 
 ## How to view all records in a table
 - use SELECT * from [tableName] to get all rows from a table
@@ -43,4 +43,4 @@
    - more complex selections can be made with tailored statements
 - close off the command with a semi-colon ";"
 
-![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/basics/psql_0basics_selectAll.png?raw=true "select all")
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/1_basics/screencaps/psql_0basics_selectAll.png?raw=true "select all")
