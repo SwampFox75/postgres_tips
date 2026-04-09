@@ -1,2 +1,3 @@
-# postgres_tips
-tips for using PostgreSQL
+# PostgreSQL Tips
+
+basic use tips for using PostgreSQL to do simple database management
