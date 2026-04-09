@@ -32,6 +32,8 @@
    - the values are also in parentheses
    - multiple entries are seperated by commas
 - the final entry is ended with a semi-colon ";"
+- the console should return "INSERT" with the row count, in this case 3
+   - the first digit is the OID but that can be ignored for now
 
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/basics/psql_0basics_insertRows.png?raw=true "insert rows")
 
