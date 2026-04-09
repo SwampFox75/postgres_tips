@@ -10,5 +10,6 @@
 - Use the DROP TABLES command ending with a semi-colon
    - seperate multiple tables with a comma
       - Ex: DROP TABLES table1, table2, table3;
+- Use the \dt command again to verify tables 
 
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/basics/psql_0basics_dropTables.png?raw=true "drop tables")
