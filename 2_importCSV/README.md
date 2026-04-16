@@ -27,10 +27,23 @@
 
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/2_importCSV/screencaps/psql_1importCSV_copyCSV.png?raw=true "copy CSV")
 
-## Select rows from the table to verify
+## Select a few rows from the table to verify
 - the example import pulled in 100,000 rows
 - using just SELECT * FROM [tableName] from the Basics would try to return all 100,000
 - use LIMIT at the end of the command to request a few to verify it worked
-   - example: SELECT * FROM ev LIMIT 10
+- close the command with the semi-colon character ";"
+   - example: SELECT * FROM ev LIMIT 10;
 
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/2_importCSV/screencaps/psql_1importCSV_selectTen.png?raw=true "select ten")
+
+## Get a total row count from the table to verify
+- the example import pulled in 100,000 rows
+- use SELECT COUNT(*) AS [customColumnName] FROM [tableName]
+- COUNT is a aggregation and the asterisk means everything, this counts every row
+- "AS" gives the COUNT a name of your choosing
+   - try to pick short descriptive names that are not also SQL commands
+      - example: re-using just "COUNT" as a name in this case
+- close the command with the semi-colon character ";"
+   - example: SELECT COUNT(*) AS row_count FROM ev;
+
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/2_importCSV/screencaps/psql_1importCSV_rowCount.png?raw=true "row count")
