@@ -38,7 +38,7 @@
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/1_basics/screencaps/psql_0basics_insertRows.png?raw=true "insert rows")
 
 ## How to view all records in a table
-- use SELECT * from [tableName] to get all rows from a table
+- use SELECT * FROM [tableName] to get all rows from a table
    - the asterisk is the wildcard character so it will get everything
    - more complex selections can be made with tailored statements
 - close off the command with a semi-colon ";"
