@@ -12,4 +12,4 @@
    - SERIAL type increments by one each row
    - PRIMARY KEY means it can not have duplicate values so each row is uniquely referenced
 
-![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/2_importCSV/screencaps/psql_1importCSV_createTables.png?raw=true "create tables")
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/2_importCSV/screencaps/psql_1importCSV_createTable.png?raw=true "create tables")
