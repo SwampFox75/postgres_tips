@@ -23,7 +23,7 @@
 - close the command with the semi-colon character ";"
 - it should return how many rows were copied if successful
 
-![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/3_exportCSV/screencaps/psql_2exportTable_copyCSV.png?raw=true "export table")
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/3_exportCSV/screencaps/psql_2exportCSV_exportTable.png?raw=true "export table")
 
 ## Select a few rows from the table to verify
 - the example import pulled in 100,000 rows
@@ -32,7 +32,7 @@
 - close the command with the semi-colon character ";"
    - example: SELECT * FROM ev LIMIT 10;
 
-![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/2_importCSV/screencaps/psql_2exportQuery.png?raw=true "export query")
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/3_exportCSV/screencaps/psql_2exportCSV_exportTable.png?raw=true "export query")
 
 ## Get a total row count from the table to verify
 - the example import pulled in 100,000 rows
@@ -44,4 +44,4 @@
 - close the command with the semi-colon character ";"
    - example: SELECT COUNT(*) AS row_count FROM ev;
 
-![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/3_exportCSV/screencaps/psql_2lsCSV_rowCount.png?raw=true "row count")
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/3_exportCSV/screencaps/psql_2exportCSV_exportTable.png?raw=true "row count")
