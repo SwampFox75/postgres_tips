@@ -33,4 +33,4 @@
 - use LIMIT at the end of the command to request a few to verify it worked
    - example: SELECT * FROM ev LIMIT 10
 
-![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/2_importCSV/screencaps/psql_1importCSV_selectTem.png?raw=true "select ten")
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/2_importCSV/screencaps/psql_1importCSV_selectTen.png?raw=true "select ten")
