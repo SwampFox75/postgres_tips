@@ -13,3 +13,17 @@
    - PRIMARY KEY means it can not have duplicate values so each row is uniquely referenced
 
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/2_importCSV/screencaps/psql_1importCSV_createTable.png?raw=true "create tables")
+
+## Use the \COPY command
+- to keep it simple make sure the CSV file columns match the table
+- start the command with \COPY [tableName] ([columnName1], [columnName2]...)
+- enter allows the command to continue on the next line, FROM '[CSVfilePath]'
+- then DELIMITER '[delimiterCharacter]'
+   - DELIMITER can only accept one character to use an escape character "\" add the E flag
+      - example: DELIMITER E'\t' is needed for the TAB character
+- CSV HEADER tells it to ignore the first row
+- close the command with the semi-colon character ";"
+- it should return how many rows were copied if successful
+
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/2_importCSV/screencaps/psql_1importCSV_createTable.png?raw=true "create tables")
+
