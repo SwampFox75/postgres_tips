@@ -11,7 +11,7 @@
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/4_realign/screencaps/psql_3realign_delete.png?raw=true "delete")
 
 
-## Re-order the sequence ID
+## Re-order the Sequence ID
 - after importing tables the data may be disordered by their sequence ID
 - for this example we can re-use the 2025 export from the exportCSV example
 - halt all processing on the table so new entries do not get mixed in
