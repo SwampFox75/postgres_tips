@@ -12,7 +12,7 @@
 
 
 ## Re-order the rows and index
-- after exporting or importing tables the data may be chopped up by date or id
+- after exporting or importing tables the data may be disordered by their sequence id
 - for this example we can re-use the 2025 export from the exportCSV example
   - halt all processing on the table so new entries do not get mixed in
   - example: use SELECT * with LIMIT to see the current 2025 table
