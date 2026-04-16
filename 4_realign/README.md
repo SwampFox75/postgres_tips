@@ -35,7 +35,19 @@
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/1_basics/screencaps/psql_0basics_displayTables.png?raw=true "display tables")
 
 - use the following command to see the last index number from the disordered data
-  - SELECT MAX([sequenceColumnName]) FROM [resultFromPreviousQuery]
-    - note: this is disordered data inserted into a new table so it thinks it is starting at 1 
+  - SELECT MAX([sequenceColumnName]) FROM [tableName]
+    - note: this is the last sequence number from the disordered inserted data
+
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/1_basics/screencaps/psql_0basics_displayTables.png?raw=true "display tables")
+
+- use the following command to set the sequence index to the last one from the inserted data
+  - SELECT MAX([sequenceColumnName]) FROM [tableName]
+    - note: this is the last sequence number from the disordered inserted data
+
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/1_basics/screencaps/psql_0basics_displayTables.png?raw=true "display tables")
+
+- use the following command to set the sequence index to the last one from the inserted data
+  - SELECT MAX([sequenceColumnName]) FROM [tableName]
+    - note: this is the last sequence number from the disordered inserted data
 
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/1_basics/screencaps/psql_0basics_displayTables.png?raw=true "display tables")
