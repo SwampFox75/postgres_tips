@@ -49,7 +49,7 @@
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/4_realign/screencaps/psql_3realign_order4.png?raw=true "step 5")
 
 - to verify the example an insert will be performed and the new id should be one newer in sequence
-- inserting a parody car into the ev table
+  - inserting a fictional car into the ev table
 
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/4_realign/screencaps/psql_3realign_order5.png?raw=true "proof 0")
 
