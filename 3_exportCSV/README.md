@@ -6,13 +6,11 @@
    - /tmp on Linux or Mac is accessible by all users
    - C:\Users\Public on Windows is accessible by all users
  
-## If a table does not exist CREATE TABLE
-- make a column of the correct data type for each column to be imported
-- the "id" column here is new from the Basics
-   - SERIAL type increments by one each row keeping a count of the records
-   - PRIMARY KEY means it can not have duplicate values so each row is uniquely referenced
+## See what tables are in the database
+- use the \dt command to display tables
+   - this database has one table called "ev"
 
-![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/2_importCSV/screencaps/psql_1importCSV_createTable.png?raw=true "create tables")
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/1_basics/screencaps/psql_0basics_displayTables.png?raw=true "display tables")
 
 ## Use the \COPY command
 - to keep it simple make sure the CSV file columns match the table
