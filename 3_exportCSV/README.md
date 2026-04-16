@@ -12,8 +12,8 @@
 
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/1_basics/screencaps/psql_0basics_displayTables.png?raw=true "display tables")
 
-## Use the \COPY command
-- start the command with \COPY [tableName] ([columnName1], [columnName2]...)
+## Export a whole table to CSV
+- start the command with \COPY [tableName]
 - enter allows the command to continue on the next line, TO '[CSVfilePath]'
 - then DELIMITER '[delimiterCharacter]'
    - DELIMITER can only accept one character to use an escape character "\" add the E flag
@@ -24,23 +24,36 @@
 
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/3_exportCSV/screencaps/psql_2exportCSV_exportTable.png?raw=true "export table")
 
-## Select a few rows from the table to verify
-- the example import pulled in 100,000 rows
-- using just SELECT * FROM [tableName] from the Basics would try to return all 100,000
-- use LIMIT at the end of the command to request a few to verify it worked
+## Export a query to CSV
+- start the command with \COPY ([SQLQuery])
+- enter allows the command to continue on the next line, TO '[CSVfilePath]'
+- then DELIMITER '[delimiterCharacter]'
+   - DELIMITER can only accept one character to use an escape character "\" add the E flag
+      - example: DELIMITER E'\t' is needed for the TAB character
+- CSV HEADER tells it to put the header as the first row
 - close the command with the semi-colon character ";"
-   - example: SELECT * FROM ev LIMIT 10;
+- it should return how many rows were copied if successful
+- in this case it is getting all cars made in 2025
 
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/3_exportCSV/screencaps/psql_2exportCSV_exportQuery.png?raw=true "export query")
 
-## Get a total row count from the table to verify
-- the example import pulled in 100,000 rows
-- use SELECT COUNT(*) AS [customColumnName] FROM [tableName]
-- COUNT is a aggregation and the asterisk means everything, this counts every row
-- "AS" gives the COUNT a name of your choosing
-   - try to pick short descriptive names that are not also SQL commands
-      - example: re-using just "COUNT" as a name in this case
-- close the command with the semi-colon character ";"
-   - example: SELECT COUNT(*) AS row_count FROM ev;
+## Verifying the exported files
+- this has to be outside the postgres console
+- go to where the CSV files were supposed to be made
+   - example: in this case it is on Linux so "ls /tmp/"
 
 ![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/3_exportCSV/screencaps/psql_2exportCSV_lsCSV.png?raw=true "ls CSV")
+
+## Verifying the full export
+- this has to be outside the postgres console
+- check the full export CSV
+   - example: in this case it is on Linux so "head -n 10 [filePath]"
+
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/3_exportCSV/screencaps/psql_2exportCSV_checkFull.png?raw=true "check full")
+
+## Verifying the query export
+- this has to be outside the postgres console
+- check the query export CSV and verify it is all cars made in 2025
+   - example: in this case it is on Linux so "head -n 10 [filePath]"
+
+![alt text](https://github.com/SwampFox75/postgres_tips/blob/main/3_exportCSV/screencaps/psql_2exportCSV_check2025.png?raw=true "check 2025")
